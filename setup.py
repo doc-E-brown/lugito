@@ -12,11 +12,12 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    'Click>=6.0',
+    'Click>=7.0',
     'Flask>=1.0.2',
-    'httplib2==0.11.3', # BJ - Currently the latest version of httplib2 (0.12.0)
-    # is not compatible with launchpadlib
+    'httplib2==0.12.0',
     'launchpadlib>=1.10.6',
+    'lazr.restfulclient>=0.14.2',
+    'lazr.uri>=1.0.23',
     'phabricator>=0.7.0',
     'versioneer>=0.18',
 ]
